@@ -340,7 +340,9 @@ public class HaslinDAvila_Lab3 {
                                 }
                             }
                             elim = Integer.parseInt(JOptionPane.showInputDialog(salida));
-                            carros.remove(elim);
+                            if (carros.get(elim) instanceof Maybach) {
+                                carros.remove(elim);
+                            }
                             break;
                         case "b":
                             String salida1 = "";
@@ -351,7 +353,9 @@ public class HaslinDAvila_Lab3 {
                                 }
                             }
                             elim2 = Integer.parseInt(JOptionPane.showInputDialog(salida1));
-                            carros.remove(elim2);
+                            if (carros.get(elim2) instanceof MorganAero8) {
+                                carros.remove(elim2);
+                            }
                             break;
                         case "c":
                             String salida2 = "";
@@ -362,7 +366,9 @@ public class HaslinDAvila_Lab3 {
                                 }
                             }
                             elim3 = Integer.parseInt(JOptionPane.showInputDialog(salida2));
-                            carros.remove(elim3);
+                            if (carros.get(elim3) instanceof FiskerAutomotive) {
+                                carros.remove(elim3);
+                            }
                             break;
                         case "d":
                             String salida3 = "";
@@ -373,7 +379,9 @@ public class HaslinDAvila_Lab3 {
                                 }
                             }
                             elim4 = Integer.parseInt(JOptionPane.showInputDialog(salida3));
-                            carros.remove(elim4);
+                            if (carros.get(elim4) instanceof Tramontana) {
+                                carros.remove(elim4);
+                            }
                             break;
                         case "e":
                             String salida4 = "";
@@ -384,7 +392,9 @@ public class HaslinDAvila_Lab3 {
                                 }
                             }
                             elim5 = Integer.parseInt(JOptionPane.showInputDialog(salida4));
-                            personas.remove(elim5);
+                            if (personas.get(elim5) instanceof Cliente) {
+                                personas.remove(elim5);
+                            }
                             break;
                         case "f":
                             String salida5 = "";
@@ -395,12 +405,24 @@ public class HaslinDAvila_Lab3 {
                                 }
                             }
                             elim6 = Integer.parseInt(JOptionPane.showInputDialog(salida5));
-                            personas.remove(elim6);
+                            if (personas.get(elim6) instanceof Empleados) {
+                                personas.remove(elim6);
+                            }
                             break;
                     }
                     break;
                 case 4:
-                    
+                    String salida5 = "";
+                    int emp = 0;
+                    for (Object temp : personas) {
+                        if (temp instanceof Empleados) {
+                            salida5 += personas.indexOf(temp) + " " + ((Empleados) temp) + "\n";
+                        }
+                    }
+                    emp = Integer.parseInt(JOptionPane.showInputDialog(null, salida5, "Seleccione un Empleado"));
+                    if () {
+                        
+                    }
                     break;
                 case 5:
                     
