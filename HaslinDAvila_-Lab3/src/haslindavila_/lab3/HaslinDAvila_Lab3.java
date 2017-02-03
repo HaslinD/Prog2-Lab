@@ -112,12 +112,42 @@ public class HaslinDAvila_Lab3 {
                     opt2 = JOptionPane.showInputDialog(SubMenu2).toUpperCase();
                     switch (opt2) {
                         case "a":
+                            nserie = Integer.parseInt(JOptionPane.showInputDialog("Numero de Serie"));
+                            fechaensamblado = JOptionPane.showInputDialog("Ingrese la fecha de Ensamblado, yyyy,MM,dd");
+                            colorpintura = Color.BLACK;
+                            marcallantas = JOptionPane.showInputDialog("Ingrese la marca de la llantas");
+                            llantas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la s llantas de repuesto (1 o 2)"));
+                            polarizado = JOptionPane.showInputDialog("Ingrese si quiere polarizado (S/N)");
+                            velocidadmax = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la velocidad maxima (155 a 160)"));
+                            kilometrosgal = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los km/gal (50 a 55)"));
+                            precioventa = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio del carro (400000 a 600000)"));
                             break;
                         case "b":
+                            nserie = Integer.parseInt(JOptionPane.showInputDialog("Numero de Serie"));
+                            fechaensamblado = JOptionPane.showInputDialog("Ingrese la fecha de Ensamblado, yyyy,MM,dd");
+                            colorpintura = Color.BLACK;
+                            marcallantas = JOptionPane.showInputDialog("Ingrese la marca de la llantas");
+                            polarizado = JOptionPane.showInputDialog("Ingrese si quiere polarizado (S/N)");
+                            convertible = JOptionPane.showInputDialog("Ingrese si lo quiere convertible (S/N)");
+                            tipocabina = JOptionPane.showInputDialog("Ingrese el tipo de Cabina (Unica o Doble)");
+                            velocidadmax = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la velocidad maxima (140 a 145)"));
+                            kilometrosgal = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los km/gal (35 a 40)"));
+                            precioventa = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio del carro (500000 a 700000)"));
                             break;
                         case "c":
+                            nserie = Integer.parseInt(JOptionPane.showInputDialog("Numero de Serie"));
+                            fechaensamblado = JOptionPane.showInputDialog("Ingrese la fecha de Ensamblado, yyyy,MM,dd");
+                            colorpintura = Color.BLACK;
+                            marcallantas = JOptionPane.showInputDialog("Ingrese la marca de la llantas");
+                            polarizado = JOptionPane.showInputDialog("Ingrese si quiere polarizado (S/N)");
+                            convertible = JOptionPane.showInputDialog("Ingrese si lo quiere convertible (S/N)");
+                            tipoestilo = JOptionPane.showInputDialog("Ingrese el tipo de Cabina (camioneta o turismo)");
+                            velocidadmax = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la velocidad maxima (160 a 165)"));
+                            kilometrosgal = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los km/gal (55 a 60)"));
+                            precioventa = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio del carro (450000 a 650000)"));
                             break;
                         case "d":
+                            
                             break;
                     }
                     break;
