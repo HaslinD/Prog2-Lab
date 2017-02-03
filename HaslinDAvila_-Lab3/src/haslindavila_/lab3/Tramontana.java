@@ -14,13 +14,13 @@ public class Tramontana extends Carros{
         super();
     }
 
-    public Tramontana(int peso, int transmision, int velocidadmax, int kilometrosgal, double precioventa, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
+    public Tramontana(int peso, int transmision, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
         super(nserie, ensamblado, pintura, llantas, polarizado, velocidadMax, kilometrosGal, precio);
         this.peso = peso;
         this.transmision = transmision;
-        this.velocidadmax = velocidadmax;
-        this.kilometrosgal = kilometrosgal;
-        this.precioventa = precioventa;
+        setVelocidadMax(velocidadmax);
+        setKilometrosGal(kilometrosgal);
+        setPrecio(precioventa);
     }
 
     public int getPeso() {

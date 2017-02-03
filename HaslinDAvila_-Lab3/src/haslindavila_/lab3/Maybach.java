@@ -13,12 +13,12 @@ public class Maybach extends Carros{
         super();
     }
     
-    public Maybach(int llantasprov, int velocidadmax, int kilometrosgal, double precioventa, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
+    public Maybach(int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
         super(nserie, ensamblado, pintura, llantas, polarizado, velocidadMax, kilometrosGal, precio);
         this.llantasprov = llantasprov;
-        this.velocidadmax = velocidadmax;
-        this.kilometrosgal = kilometrosgal;
-        this.precioventa = precioventa;
+        setPrecioventa(precioventa);
+        setKilometrosgal(kilometrosgal);
+        setVelocidadMax(velocidadmax);
     }
 
     public int getLlantasprov() {

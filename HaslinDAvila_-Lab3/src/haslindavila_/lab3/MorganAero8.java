@@ -14,13 +14,13 @@ public class MorganAero8 extends Carros{
         super();
     }
 
-    public MorganAero8(String convertible, String tipoCabina, int velocidadmax, int kilometrosgal, double preciovemta, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
+    public MorganAero8(String convertible, String tipoCabina, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
         super(nserie, ensamblado, pintura, llantas, polarizado, velocidadMax, kilometrosGal, precio);
         this.convertible = convertible;
         this.tipoCabina = tipoCabina;
-        this.velocidadmax = velocidadmax;
-        this.kilometrosgal = kilometrosgal;
-        this.preciovemta = preciovemta;
+        setVelocidadMax(velocidadmax);
+        setKilometrosGal(kilometrosgal);
+        setPrecio(preciovemta);
     }
 
     public String getConvertible() {

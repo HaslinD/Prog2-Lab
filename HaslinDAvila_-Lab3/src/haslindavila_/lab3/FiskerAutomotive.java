@@ -14,13 +14,13 @@ public class FiskerAutomotive extends Carros{
         super();
     }
 
-    public FiskerAutomotive(String tipoestilo, String convertible, int velocidadmax, int kilometrosgal, double precioventa, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
+    public FiskerAutomotive(String tipoestilo, String convertible, int nserie, Date ensamblado, Color pintura, String llantas, String polarizado, int velocidadMax, int kilometrosGal, double precio) {
         super(nserie, ensamblado, pintura, llantas, polarizado, velocidadMax, kilometrosGal, precio);
         this.tipoestilo = tipoestilo;
         this.convertible = convertible;
-        this.velocidadmax = velocidadmax;
-        this.kilometrosgal = kilometrosgal;
-        this.precioventa = precioventa;
+        setVelocidadMax(velocidadmax);
+        setKilometrosGal(kilometrosgal);
+        setPrecio(precioventa);
     }
 
     public String getTipoestilo() {
